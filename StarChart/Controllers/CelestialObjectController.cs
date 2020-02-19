@@ -17,7 +17,7 @@ namespace StarChart.Controllers
         {
             _context = context;
         }
-        [HttpGet("{id : int}", Name = "GetById")]
+        [HttpGet("{int : Id}", Name = "GetById")]
         public IActionResult GetById(int Id)
         {
             var celestialObject = _context.CelestialObjects.Find(Id);
